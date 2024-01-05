@@ -1,0 +1,54 @@
+@application user
+
+    1. user new account (unique email)
+        - account verification (verify email address)
+        - user profile image
+        - user details (name, email, position, bio, phone, address, etc)
+        - being able to update user detail information
+
+    2. user reset password (without being logged in)
+        - password reset link should expire within 24 hours
+
+    3. user login (using email and a password)
+        - token based authentication (JWT token)
+        - refresh token seamlessly
+
+    4. brute force attack mitigation (account lock mechanism)
+        - lock account on 6 failed login attempts
+
+    5. role and permission based application access (acl)
+        - protect application resources using roles and permissions
+
+    6. two-factor authentication (using user phone number)
+        - send verification code to user's phone
+
+    7. keep track of user activities (login, account change, etc)
+        - ability to report suspicious activities
+        - tracking information
+            - ip address
+            - device
+            - browser
+            - date
+            - type
+
+@customers
+
+    1. customer information
+        - manage customer information (name, address)
+        - customer can be a person or an institution
+        - customer should have a status
+        - customer will have invoices
+        - print customers in spreadsheet
+
+    2. search customers
+        - be able to search customers by name
+        - pagination
+
+@invoices
+
+    1. manage invoices
+        - create new invoices
+        - add invoices to customer
+        - print invoices for mailing
+        - print invoices for spreadsheets
+        - download invoices as PDF
